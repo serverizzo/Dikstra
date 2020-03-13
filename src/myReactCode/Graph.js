@@ -5,6 +5,8 @@ class Graph extends React.Component{
       super(props);
 
       this.state = {
+
+        // Edge List
         directedGraph : [
           [0,0,0],
           [0,0,0],
@@ -42,14 +44,14 @@ class Graph extends React.Component{
       // return length-1;
 
       //Debuging -- Show array
-      console.log(this.state.directedGraph)
+      // console.log(this.state.directedGraph)
 
     }
 
     render(){
       return(
         <div className = "GraphDiv">
-          <button onClick = {this.addNode}> Add Node (dose nothing for now) </button>
+          <button onClick = {this.addNode}> Add Node (only adds to js representation -- does not show html yet) </button>
         </div>
       )
     }
