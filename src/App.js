@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ExportedExample from './myReactCode/ExportedExample.js'
-// import Graph  from './myReactCode/Graph'
+import Graph  from './myReactCode/Graph'
 
 function App() {
   return (
@@ -44,7 +44,7 @@ class MyClass extends React.Component{
         Hello World 
         <Child />
         <ExportedExample />
-        {/* <Graph /> */}
+        <Graph />
       </div>
       
     )

@@ -1,14 +1,26 @@
-// import React from 'react';
-class Graph{
+import React from 'react';
+class Graph extends React.Component{
   
-    directedGraph = [
-      [0,0,0],
-      [0,0,0],
-      [0,0,0]
-    ];
-    length = 3;
+    constructor(props) {
+      super(props);
 
-    constructor(){}
+      this.state = {
+        directedGraph : [
+          [0,0,0],
+          [0,0,0],
+          [0,0,0]
+        ],
+        length : 3
+      }
+
+      // Binding -- only done for functions?
+      // this.directedGraph = this.directedGraph.bind(this);
+      // this.length = this.length.bind(this);
+
+    }
+
+    
+
 
     // working
     addNode(){
@@ -27,6 +39,14 @@ class Graph{
 
       // This will be the enumerated value of the node (i.e. its row and column in the matrix)
       // return length-1;
+    }
+
+    render(){
+      return(
+        <div class = "GraphDiv">
+          <button> Add Node (dose nothing for now) </button>
+        </div>
+      )
     }
 
 }
